@@ -1,1 +1,1 @@
-This project is made for educational purpose only.
+This project is created for educational purposes only.
