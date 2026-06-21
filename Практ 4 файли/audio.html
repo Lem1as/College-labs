@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Плеєр з плейлистом</title>
+</head>
+<body>
+  <h1>Аудіоплеєр</h1>
+  <audio id="player" controls src="myaudio1.mp3"></audio>
+  <h3>Список треків:</h3>
+  <ul>
+    <li><button onclick="playTrack('myaudio1.mp3')">Трек 1</button></li>
+    <li><button onclick="playTrack('myaudio2.mp3')">Трек 2</button></li>
+    <li><button onclick="playTrack('myaudio3.mp3')">Трек 3</button></li>
+  </ul>
+  <script>
+    function playTrack(filePath) {
+      var player = document.getElementById('player');
+      player.src = filePath;
+      player.play(); }
+  </script>
+</body>
+</html>
